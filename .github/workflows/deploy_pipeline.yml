@@ -26,6 +26,8 @@ jobs:
       # Checkout step is necessary if you want to use a config file from your repo
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Fetch previous commit for change detection
 
       - name: Detect changed files
         id: changes
