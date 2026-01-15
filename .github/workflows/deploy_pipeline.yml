@@ -32,7 +32,7 @@ jobs:
         run: |
           # Detect changed files and create a space-separated list
           changed_files=""
-          for file in steps/* do
+          for file in steps/*; do
               if git diff --name-only HEAD^ HEAD | grep -q "^steps/${file}/"; then
                 changed_files="${changed_files}${file} "
                 echo "✅ File changed: ${file}"
