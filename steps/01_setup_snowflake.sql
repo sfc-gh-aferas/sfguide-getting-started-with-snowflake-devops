@@ -10,6 +10,7 @@ CREATE OR ALTER WAREHOUSE QUICKSTART_WH
 CREATE OR ALTER DATABASE QUICKSTART_COMMON;
 
 
+
 -- API integration is needed for GitHub integration
 CREATE OR REPLACE API INTEGRATION git_api_integration
   API_PROVIDER = git_https_api
